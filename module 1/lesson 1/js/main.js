@@ -1,5 +1,5 @@
 "use strict";
-
+/*first commit*/
 const nameGoods = "Охота Крепкое, 9%, 0.5";
 const countGoods = "5 банок";
 const typeGoods = "Напитки слабоалкогольные, пенные, нефильтрованные";
