@@ -30,13 +30,17 @@
 }
 
 {
-  const nameGoods = prompt("Напишите наименование товара:")
-  const countGoods = Number(prompt("Введите количество товара"))
-  const typeGoods = prompt("Напишите категорию товара:")
-  const priceGoods = Number(prompt("Введите цену в рублях (без копеек):"))
+  const nameGoods = prompt("Напишите наименование товара:");
+  const countGoods = Number(prompt("Введите количество товара"));
+  const typeGoods = prompt("Напишите категорию товара:");
+  const priceGoods = Number(prompt("Введите цену в рублях (без копеек):"));
 
   console.log(`Количество товара  -- это число: ${typeof countGoods}
-  Цена товара также -- число: ${typeof priceGoods}`)
+  Цена товара также -- число: ${typeof priceGoods}`);
 
-  console.log(`На складе ${countGoods} товара "${typeGoods} ${nameGoods}" на сумму ${priceGoods * countGoods} деревянных`)
+  console.log(
+    `На складе ${countGoods} товара "${typeGoods} ${nameGoods}" на сумму ${
+      priceGoods * countGoods
+    } деревянных`
+  );
 }
