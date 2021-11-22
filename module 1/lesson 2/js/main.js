@@ -1,5 +1,5 @@
 "use strict";
-
+{
   const nameGoods = "Охота Крепкое, 9%, 0.5";
   const countGoods = "5 банок";
   const typeGoods = "Напитки слабоалкогольные, пенные, нефильтрованные";
@@ -12,4 +12,19 @@
 Цена товара: ${priceGoods};\n
 Общая стоимость товара: ${parseInt(countGoods) * parseFloat(priceGoods)} руб.
 `);
+}
 
+{
+  const nameGoods = "доширак со вкусом вяленого моржа";
+  const countGoods = 3;
+  const typeGoods = "быстрорастворимая еда";
+  const priceGoods = 15.92;
+
+  console.log(`
+    Наименование товара: ${nameGoods};
+    Количество товара: ${countGoods};
+    Категория товара: ${typeGoods};
+    Цена товара: ${priceGoods};
+    Общая стоимость товара: ${countGoods * priceGoods} руб.
+    `);
+}
