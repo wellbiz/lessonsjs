@@ -34,12 +34,12 @@
   const nameGoods = prompt("Напишите наименование товара:");
   const countGoods = +prompt("Введите количество товара");
   if (typeof countGoods !== "number") {
-    alert("Вы ввели некорректные данные, введите число.");
+    console.log("Вы ввели некорректные данные, введите число.");
   } else {
     const typeGoods = prompt("Напишите категорию товара:");
     const priceGoods = +prompt("Введите цену в рублях (без копеек):");
     if (typeof priceGoods !== "number") {
-      alert("Вы ввели некорректные данные, введите число.");
+      console.log("Вы ввели некорректные данные, введите число.");
     } else {
       console.log(
         `На складе ${countGoods} товара "${typeGoods} ${nameGoods}" на сумму ${
