@@ -32,16 +32,20 @@
 //task 1
 {
   const nameGoods = prompt("Напишите наименование товара:");
-  const countGoods = Number(prompt("Введите количество товара"));
-  const typeGoods = prompt("Напишите категорию товара:");
-  const priceGoods = Number(prompt("Введите цену в рублях (без копеек):"));
-  if (typeof priceGoods === "number" && typeof countGoods === "number") {
-    console.log(
-      `На складе ${countGoods} товара "${typeGoods} ${nameGoods}" на сумму ${
-        priceGoods * countGoods
-      } деревянных`
-    );
+  const countGoods = +prompt("Введите количество товара");
+  if (typeof countGoods !== "number") {
+    alert("Вы ввели некорректные данные, введите число.");
   } else {
-    console.log(`Вы ввели некорректные данные`);
+    const typeGoods = prompt("Напишите категорию товара:");
+    const priceGoods = +prompt("Введите цену в рублях (без копеек):");
+    if (typeof priceGoods !== "number") {
+      alert("Вы ввели некорректные данные, введите число.");
+    } else {
+      console.log(
+        `На складе ${countGoods} товара "${typeGoods} ${nameGoods}" на сумму ${
+          priceGoods * countGoods
+        } деревянных`
+      );
+    }
   }
 }
