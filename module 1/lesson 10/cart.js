@@ -3,6 +3,9 @@
 const cart = {
   items: [], //массив объектов -- товары. Объект товар состоит из полей: наименование, цена, количество.
   count: 0, // количество товаров
+  get totalPrice() {
+    return this.calculateItemsPrice();
+  },
 
   add(nameGoods, priceGoods, countGoods = 1) {
     let currentGood = {
@@ -48,7 +51,7 @@ const cart = {
 
   print() {
     console.log(JSON.stringify(this.items));
-    console.log(`totalPrice = ${this.calculateItemsPrice()}`);
+    console.log(`totalPrice = ${this.totalPrice}`);
   },
 };
 
