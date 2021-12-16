@@ -260,13 +260,16 @@
         "allowTemplateLiterals": true
       }
     ],
+    
     "require-jsdoc": [
-      "error",
+      2,
       {
         "require": {
           "FunctionDeclaration": true,
           "MethodDefinition": true,
-          "ClassDeclaration": true
+          "ClassDeclaration": true,
+          "ArrowFunctionExpression": true,
+          "FunctionExpression": true
         }
       }
     ],

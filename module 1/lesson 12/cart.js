@@ -28,7 +28,7 @@ const cart = {
   },
 
   increaseCount() {
-    const {items} = cart;
+    const {items} = this;
     let currentCount = 0;
     items.forEach((item) => {
       currentCount += item.count;
@@ -37,7 +37,7 @@ const cart = {
   },
 
   calculateItemsPrice() {
-    const {items} = cart;
+    const {items} = this;
     let currentPrice = 0;
     items.forEach((item) => {
       currentPrice += item.price;
