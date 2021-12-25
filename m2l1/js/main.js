@@ -34,7 +34,7 @@ const swapWrongItems = () => {
       );
       
       for (let wrongItem of wrongItemsSixthCard) {
-        lastItemSecondCard.after(wrongItem);
+        lastItemSecondCard.append(wrongItem);
       }
       
 }
